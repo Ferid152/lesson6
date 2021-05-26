@@ -27,9 +27,53 @@
             </a>
         </div>
         <div class="header-rigt">
-            <a href="" class="link menu">
-                <img src="img/menu.png" alt="menu-link">
-            </a>
+            <nav class="nav">
+                <ul class="nav-menu menu-close">
+                    <div class="man">
+                        <details class="filter-title">
+                            <summary class="summary_category_man">MAN</summary>
+                            <ul class="filter-list">
+                                <li class="nav-item-man">Accessories</li>
+                                <li class="nav-item-man">Jackets & Coats</li>
+                                <li class="nav-item-man">Polos</li>
+                                <li class="nav-item-man">T-Shirts</li>
+                                <li class="nav-item-man">Shirts</li>
+                            </ul>
+                        </details>
+
+                        <details class="filter-title">
+                            <summary class="nav-item woman">WOMAN</summary>
+                            <ul class="filter-list">
+                                <li class="filter-item">Accessories</li>
+                                <li class="filter-item">Jackets & Coats</li>
+                                <li class="filter-item">Polos</li>
+                                <li class="filter-item">T-Shirts</li>
+                                <li class="filter-item">Shirts</li>
+                                <li class="filter-item">Bags</li>
+                            </ul>
+                        </details>
+
+                        <details class="filter-title ">
+                            <summary class=" nav-item  kids">KIDS</summary>
+                            <ul class="filter-list">
+                                <li class="filter-item">Accessories</li>
+                                <li class="filter-item">Bags</li>
+                                <li class="filter-item">Denim</li>
+                                <li class="nav-item-man">T-Shirts</li>
+                            </ul>
+                        </details>
+
+                    </div>
+                    </details>
+                </ul>
+            </nav>
+            <button class="btn-open">
+                <img src="img/open.svg" width="40" height="40" alt="open">
+            </button>
+
+            <button class="btn-close">
+                <img src="img/delete.svg" width="12" height="12" alt="close">
+            </button>
             <a href="registration.html" class="link account-link">
                 <img src="img/account.png" alt="account">
             </a>
@@ -277,6 +321,22 @@
     </div>
 
 </section>
+<script>
+    let menu = document.querySelector('.nav-menu');
+    let btnOpen = document.querySelector('.btn-open');
+    let btnClose = document.querySelector('.btn-close');
+
+    btnOpen.onclick = function () {
+        menu.classList.toggle('menu-close');
+        menu.classList.toggle('menu-open');
+    }
+
+    btnClose.onclick = function () {
+        menu.classList.toggle('menu-close');
+        menu.classList.toggle('menu-open');
+    }
+
+</script>
 </body>
 
 </html>
