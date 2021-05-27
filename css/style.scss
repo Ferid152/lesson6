@@ -1,7 +1,7 @@
 
 $main-color-button:#F16D7F;
 $main-width:1140px;
-
+@import 'menu';
 body{
     margin: 0;/*убрать оступы по краям, у тега body*/
     font-family: 'Lato', sans-serif;

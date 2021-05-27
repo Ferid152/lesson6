@@ -26,14 +26,22 @@
                 <img src="img/search-icon.png" alt="search">
             </a>
         </div>
-        <div class="header-rigt">
-            <div class="menu-open"></div>
-            <button class="btn-open">
-                <img src="img/menu.png" width="40" height="40" alt="open">
-            </button>
 
+
+        <div class="header-rigt">
+            <nav class="nav ">
+                <ul class="nav-menu menu-open">
+                    <button class="open-man man ">MAN</button>
+                    <button class="open-women woman">WOMEN</button>
+                    <button class="open-kids kids">KIDS</button>
+                </ul>
+
+            </nav>
+            <button class="btn-open">
+                <img src="img/menu.png" width="32" height="23" alt="open">
+            </button>
             <button class="btn-close">
-                <img src="img/close.svg" width="32" height="32" alt="close">
+                <img src="img/delete.svg" width="32" height="32" alt="close">
             </button>
             <a href="registration.html" class="link account-link">
                 <img src="img/account.png" alt="account">
@@ -282,24 +290,25 @@
     </div>
 
 </section>
-<<<<<<< HEAD <script>
+
+<script>
     let menu = document.querySelector('.nav-menu');
     let btnOpen = document.querySelector('.btn-open');
     let btnClose = document.querySelector('.btn-close');
 
+
+
     btnOpen.onclick = function () {
-    menu.classList.toggle('menu-close');
-    menu.classList.toggle('menu-open');
+
+        menu.classList.toggle('menu-open');
     }
 
     btnClose.onclick = function () {
-    menu.classList.toggle('menu-close');
-    menu.classList.toggle('menu-open');
+        menu.classList.toggle('menu-close');
+
     }
 
-    </script>
-    =======
-    >>>>>>> parent of 52ab08b (menu)
-    </body>
+</script>
+</body>
 
 </html>
