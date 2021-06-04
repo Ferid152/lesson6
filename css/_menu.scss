@@ -33,7 +33,7 @@ body{
 .menu-open{
     background: #fff;
     position: absolute;
-    top: 88.68px;
+    top:75.72px;
     height: 764;
     bottom: 0;
     width: 232px;
@@ -71,12 +71,8 @@ body{
 .header-phone:hover{
     color: sandybrown;
 }
-.btn-open,.btn-close{
-    background-color: transparent;/*прозрачность фона*/ 
-    border: none;
-    color: red;
-    cursor: pointer;
-}
+
+
 .summary_category_man {
         display: block;
         border-left: 5px solid $main-color-button;
@@ -141,14 +137,24 @@ body{
     margin-top: 24px;
     margin-bottom: 24px; 
  }
+ .menu-close{
+     display: none;
+ }
+ .menu-close ~ .btn-close{
+    display: none;
+}
  .btn-close{
     position: fixed;
-    top: 60px;
+    top: 81.76px;
     background-color: aliceblue;
+    display: none;
+    
 }
 .btn-open,.btn-close{
-    
-    background-color: transparent;
+    display: block;
+}
+.btn-open,.btn-close{
+    background-color: transparent;/*прозрачность фона*/ 
     border: none;
     color: red;
     cursor: pointer;

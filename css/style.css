@@ -43,7 +43,7 @@ body {
 .menu-open {
   background: #fff;
   position: absolute;
-  top: 88.68px;
+  top: 75.72px;
   height: 764;
   bottom: 0;
   width: 232px;
@@ -89,14 +89,6 @@ body {
 .nav-link:hover,
 .header-phone:hover {
   color: sandybrown;
-}
-
-.btn-open, .btn-close {
-  background-color: transparent;
-  /*прозрачность фона*/
-  border: none;
-  color: red;
-  cursor: pointer;
 }
 
 .summary_category_man {
@@ -169,14 +161,28 @@ body {
   margin-bottom: 24px;
 }
 
+.menu-close {
+  display: none;
+}
+
+.menu-close ~ .btn-close {
+  display: none;
+}
+
 .btn-close {
   position: fixed;
-  top: 60px;
+  top: 81.76px;
   background-color: aliceblue;
+  display: none;
+}
+
+.btn-open, .btn-close {
+  display: block;
 }
 
 .btn-open, .btn-close {
   background-color: transparent;
+  /*прозрачность фона*/
   border: none;
   color: red;
   cursor: pointer;
@@ -219,7 +225,7 @@ body {
 .header {
   background-color: #222;
   /*фоновый цвет*/
-  padding: 20px 0;
+  padding: 17px;
   color: #fff;
   /*цвет текста в шапке*/
 }
